@@ -177,8 +177,8 @@ test('relaxed visual check', async ({ page, vibeCheck }) => {
 
 | Variable | Description |
 |----------|-------------|
-| `OPENAI_API_KEY` | OpenAI API key for GPT-4o vision |
-| `ANTHROPIC_API_KEY` | Anthropic API key for Claude vision |
+| `OPENAI_API_KEY` | OpenAI API key for GPT-5.2 vision |
+| `ANTHROPIC_API_KEY` | Anthropic API key for Claude Sonnet 4.5 vision |
 | `VIBE_DEFAULT_PROVIDER` | Default provider (`openai` or `anthropic`) |
 
 ### Custom Test Instance
@@ -213,7 +213,7 @@ import { test, expect } from './my-test-setup';
 
 1. **Screenshot Capture**: When `vibeCheck()` is called, a screenshot of the target (page or element) is captured.
 
-2. **LLM Evaluation**: The screenshot and your specification are sent to the configured LLM (OpenAI GPT-4o or Anthropic Claude).
+2. **LLM Evaluation**: The screenshot and your specification are sent to the configured LLM (OpenAI GPT-5.2 or Anthropic Claude Sonnet 4.5).
 
 3. **Confidence Scoring**: The LLM analyzes the image and returns:
    - `verdict`: Whether the UI matches (`yes` or `no`)
@@ -225,9 +225,9 @@ import { test, expect } from './my-test-setup';
 
 ## Provider Comparison
 
-| Feature | OpenAI (GPT-4o) | Anthropic (Claude) |
-|---------|-----------------|-------------------|
-| Default Model | `gpt-4o` | `claude-3-7-sonnet-latest` |
+| Feature | OpenAI (GPT-5.2) | Anthropic (Claude Sonnet 4.5) |
+|---------|------------------|-------------------------------|
+| Default Model | `gpt-5.2` | `claude-sonnet-4-5-20250929` |
 | Image Analysis | Excellent | Excellent |
 | Speed | Fast | Fast |
 | Cost | See OpenAI pricing | See Anthropic pricing |

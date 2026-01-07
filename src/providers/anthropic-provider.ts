@@ -10,17 +10,17 @@ import { ENV_VARS, getApiKey } from "../utils/env";
  * Configuration options specific to the Anthropic provider
  */
 export interface AnthropicProviderConfig extends LLMProviderConfig {
-  /** Anthropic model to use, default is claude-3-7-sonnet-latest */
+  /** Anthropic model to use, default is claude-sonnet-4-5-20250929 */
   model?: string;
 }
 
 /**
  * Anthropic (Claude) implementation of the LLM provider
- * Uses Anthropic's Claude vision capabilities to evaluate images
+ * Uses Anthropic's Claude Sonnet 4.5 vision capabilities to evaluate images
  */
 export class AnthropicProvider extends BaseLLMProvider {
   /** Default model to use for Anthropic API calls */
-  private static readonly DEFAULT_MODEL = "claude-3-7-sonnet-latest";
+  private static readonly DEFAULT_MODEL = "claude-sonnet-4-5-20250929";
 
   /** Name of this provider */
   protected providerName = "Anthropic";

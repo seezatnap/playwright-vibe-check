@@ -16,11 +16,11 @@ export interface OpenAIProviderConfig extends LLMProviderConfig {
 
 /**
  * OpenAI implementation of the LLM provider
- * Uses OpenAI's vision capabilities to evaluate images
+ * Uses OpenAI's GPT-5.2 vision capabilities to evaluate images
  */
 export class OpenAIProvider extends BaseLLMProvider {
   /** Default model to use for OpenAI API calls */
-  private static readonly DEFAULT_MODEL = "gpt-4o";
+  private static readonly DEFAULT_MODEL = "gpt-5.2";
 
   /** Name of this provider */
   protected providerName = "OpenAI";
@@ -109,7 +109,7 @@ export class OpenAIProvider extends BaseLLMProvider {
                 ],
               },
             ],
-            max_tokens: 1500,
+            max_completion_tokens: 1500,
             temperature: 0.2,
             ...(options.modelParameters || {}),
           }),
