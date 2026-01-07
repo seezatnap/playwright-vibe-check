@@ -1,0 +1,52 @@
+{
+  "name": "playwright-vibe-check",
+  "version": "1.0.0",
+  "description": "LLM-based visual testing for Playwright, using OpenAI and Claude to evaluate UI against specifications",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rimraf dist",
+    "test": "playwright test",
+    "test:unit": "vitest run",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "playwright",
+    "playwright-plugin",
+    "visual-testing",
+    "visual-regression",
+    "llm",
+    "openai",
+    "anthropic",
+    "claude",
+    "testing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/playwright-vibe-check"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/playwright-vibe-check/issues"
+  },
+  "homepage": "https://github.com/yourusername/playwright-vibe-check#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^22.13.8",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.2",
+    "vitest": "^1.2.0"
+  },
+  "peerDependencies": {
+    "@playwright/test": ">=1.40.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}
