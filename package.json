@@ -1,6 +1,6 @@
 {
   "name": "playwright-vibe-check",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "LLM-based visual testing for Playwright, using OpenAI and Claude to evaluate UI against specifications",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
