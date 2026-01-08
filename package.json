@@ -30,12 +30,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/playwright-vibe-check"
+    "url": "https://github.com/seezatnap/playwright-vibe-check"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/playwright-vibe-check/issues"
+    "url": "https://github.com/seezatnap/playwright-vibe-check/issues"
   },
-  "homepage": "https://github.com/yourusername/playwright-vibe-check#readme",
+  "homepage": "https://github.com/seezatnap/playwright-vibe-check#readme",
   "devDependencies": {
     "@playwright/test": "^1.40.0",
     "@types/node": "^22.13.8",
